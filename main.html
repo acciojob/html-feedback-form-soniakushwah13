@@ -11,16 +11,16 @@
 	<h1>Feedback Form</h1>
    <form action="/submit-feedback" method="post">
     <label for="name">Name:</label>
-    <input type="text" id="name" setAttribute (minlength="3" maxlength="50") required><br>
+    <input type="text" id="name" name="name" minlength="3" maxlength="50" required><br>
 
-	<label for="portfolio">portfolio:</label>
-    <input type="URL" id="portfolio" required><br>
+	<label for="portfolio">portfolio URL:</label>
+    <input type="url" id="portfolio" name="portfolio" required><br>
 
 	<label for="Favorite Color">Favorite Color:</label>
-    <input type="Color" id="favColor" required><br>
+    <input type="Color" id="favColor" name="favColor" required><br>
 
-	<label for="Likeness">Likeness:</label>
-    <input type="Range" id="likeness"  setAttribute (minlength="1" maxlength="100") required><br>
+	<label for="Likeness">Likeness(1-100):</label>
+    <input type="Range" id="likeness" name="likeness" minlength="1" maxlength="100" required><br>
 	
     <input type="submit" value="Submit">
    </form>
